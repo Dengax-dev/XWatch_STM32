@@ -1,0 +1,7 @@
+OBJ/
+USER/.vscode/
+USER/Listings/
+USER/Objects/
+*.AX
+*.uvoptx
+*.bat
