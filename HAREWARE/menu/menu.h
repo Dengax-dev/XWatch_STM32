@@ -24,4 +24,7 @@ void Game(void);
 void Alarm(void);
 void Show_Info(void);
 
+//菜单显示处理
+void Menu_Show(unsigned char key);
+
 #endif

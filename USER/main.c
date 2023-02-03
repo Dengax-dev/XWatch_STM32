@@ -30,26 +30,7 @@ int main(void)
 
     while(1){
 		key = KEY_Scan(0);
-		
-		if(key == 1){
-			func_index = table[func_index].back;
-		}
-		if(key == 2){
-			func_index = table[func_index].enter;
-		}
-		if(key == 3){
-			func_index = table[func_index].next;
-		}
-		
-		if(func_index != last_index)
-		{
-			current_operation_index = table[func_index].current_operation;
-			OLED_Fill_Fast(0x00); //«Â∆¡
-			(*current_operation_index)();
-			
-			last_index = func_index;
-		}
-		
+		Menu_Show(key);
 		
 //		LED0 = LED_ON;
 //		LED1 = LED_ON;

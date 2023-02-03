@@ -58,6 +58,36 @@ void Show_Info(void){
 	OLED_ShowStr(0,0,"all info",2);
 }
 
+//菜单显示处理
+void Menu_Show(unsigned char key)
+{
+	extern void (*current_operation_index)();
+	extern unsigned char func_index; //主程序此时所在程序的索引值
+	extern unsigned char last_index;
 
+	switch (key)
+	{
+	case 1:
+		func_index = table[func_index].back;
+		break;
+	case 2:
+		func_index = table[func_index].enter;
+		break;
+	case 3:
+		func_index = table[func_index].next;
+		break;
+	default:
+		break;
+	}
+
+	if(func_index != last_index)
+	{
+		current_operation_index = table[func_index].current_operation;
+		OLED_Fill_Fast(0x00); //清屏
+		(*current_operation_index)();
+		
+		last_index = func_index;
+	}
+}
 
 
