@@ -332,7 +332,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\USER;..\CORE;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HAREWARE\LED;..\HAREWARE\OLED;..\HAREWARE\key;..\HAREWARE\menu</IncludePath>
+              <IncludePath>..\USER;..\CORE;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HAREWARE\LED;..\HAREWARE\OLED;..\HAREWARE\key;..\HAREWARE\menu;..\HAREWARE\rtc;..\HAREWARE\timer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -569,6 +569,11 @@
               <FileName>menu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HAREWARE\menu\menu.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HAREWARE\rtc\rtc.c</FilePath>
             </File>
           </Files>
         </Group>
