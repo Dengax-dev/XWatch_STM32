@@ -23,7 +23,9 @@ Menu_table table[30]=
 };
 
 void Show_Watch(void){
-	OLED_ShowStr(0,0,"Watch",2);
+	OLED_ShowStr(34+0,2,"0000-00-00",1);
+	OLED_ShowStr(32+0,4,"00:00:00",2);
+	
 }
 
 void Show_Temp_bmp(void){
