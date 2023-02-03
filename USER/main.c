@@ -10,7 +10,7 @@
 #define LED_ON   0; //led开启
 #define LED_OFF  1; //led关闭
 
-void (*current_operation_index)();\
+void (*current_operation_index)();
 unsigned char key;
 unsigned char func_index = 0; //主程序此时所在程序的索引值
 unsigned char last_index = 127;
